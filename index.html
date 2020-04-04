@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Storage API</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="mainWindow">
+		<h1>WEB STORAGE</h1>
+		<p>This example is designed to demonstrate usage of the W3C <a href="http://dev.w3.org/html5/webstorage/">Web Storage API</a>. It should work as far back as IE8. Choose custom background colours, logos and fonts from the below drop down menus, then try closing and reopening the page — you will find that your choices are remembered, as they are stored using Web Storage. You can also visit the <a href="event.html">storage event output</a> (opens in new tab). Open this, change some values in the index page, then look at the events page — you'll see the storage changes reported.</p>
+		<img  id="picture" src="">
+		<form>
+			<div>
+				<label for="bgcolor">Choose background color:</label>
+				<input type="text" id="bgcolor" class="jscolor" value="FF8A4F">
+			</div>
+			<div>
+				<label for="font">Choose font style:</label>
+				<select id="font">
+					<option value="'Open Sans Condensed',sans-serif" selected>Sans-serif</option>
+					<option value="'Bitter', serif">Serif</option>
+					<option value="'Ubuntu Mono'">Monospace</option>
+				</select>
+			</div>
+			<div>
+				<label for="image">Choose image:</label>
+				<select id="image">
+					<option value="img/girl.jpg" selected>Firefox</option>
+					<option value="img/timg.jpg">Crocodile</option>
+				</select>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="jscolor.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
